@@ -7,6 +7,18 @@ _Este proyecto es un sistema de postulacion de empleos de programación._
 <br />
 <br />
 
+# Bitácora del proyecto
+
+_Esta sección muetrsa los avances por dia del proyecto._
+
+| Fecha      | Nombre                  | Descripción                                                           |
+| :--------- | :---------------------- | :-------------------------------------------------------------------- |
+| `16/03/23` | `Creacion del proyecto` | Creación del proyecto y se agrega phone para user.                    |
+| `17/03/23` | `Rol y cuenta validada` | Creación de un rol para user y validacion para cada cuenta por email. |
+
+<br />
+<br />
+
 ### Levantar el servidor Local
 
 <p>Levantar estos comandos en 2 consolas <b>CMD</b> al mismo tiempo</p>
