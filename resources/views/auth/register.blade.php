@@ -26,7 +26,7 @@
             <x-input-error :messages="$errors->get('phone')" class="mt-2" />
         </div>
 
-        <!--  -->
+        <!-- Role -->
         <div class="mt-4">
             <x-input-label for="role" :value="__('Account Type')" />
             <x-select id="role" name="role" class="block mt-1 w-full text-center"
@@ -34,7 +34,7 @@
                 <option value="1" title="{{ __('Gets a job') }}">{{ __('Developer') }}</option>
                 <option value="2" title="{{ __('Post jobs') }}">{{ __('Recluiter') }}</option>
             </x-select>
-            <x-input-error :messages="$errors->get('phone')" class="mt-2" />
+            <x-input-error :messages="$errors->get('role')" class="mt-2" />
         </div>
 
         <!-- Password -->
