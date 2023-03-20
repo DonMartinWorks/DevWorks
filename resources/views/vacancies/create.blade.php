@@ -7,9 +7,9 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-gray-50 overflow-hidden shadow-sm sm:rounded-lg">
+            <div class="bg-gray-100 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
-                    <h2 class="text-4xl font-bold text-center mb-10">{{ __('Post Vacancy') }}</h2>
+                    <h2 class="text-4xl font-bold text-center my-10">{{ __('Post Vacancy') }}</h2>
 
                     <div class="md:flex md:justify-center p-5">
                         <livewire:component.create-vacancy />
