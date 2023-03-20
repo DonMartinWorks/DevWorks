@@ -16,7 +16,7 @@ class UsersSeeder extends Seeder
         //  Usuarios creados
         User::Create([
             'name' => 'Din Djarin',
-            'email' => 'dindjarin@mandalorian.com',
+            'email' => 'djarin@mandalorian.com',
             'password' => bcrypt('123456789'),
             'phone' => '843701051',
             'email_verified_at' => now(),
