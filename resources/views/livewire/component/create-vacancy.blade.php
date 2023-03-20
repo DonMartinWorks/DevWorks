@@ -47,10 +47,8 @@
     <!-- Description -->
     <div class="mt-4">
         <x-input-label for="description" :value="__('Description')" />
-        <textarea name="description" id="description"
-            class="border-gray-300 focus:border-purple-600 focus:ring-purple-600 rounded-md shadow-sm block mt-1 w-full h-60"></textarea>
-
-        {{-- <x-inputs.textarea wire:model.defer="currentProject.description" id="projectDescription" required /> --}}
+        <x-textarea  name="description" id="description"
+        class="h-60" required />
         <x-input-error :messages="$errors->get('description')" class="mt-2" />
     </div>
 
@@ -63,6 +61,6 @@
     </div>
 
     <x-primary-button class="mt-5 w-full justify-center py-4">
-        {{ __('Register') }}
+        {{ __('Create Post') }}
     </x-primary-button>
 </form>

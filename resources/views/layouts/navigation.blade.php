@@ -17,7 +17,7 @@
                     </x-nav-link>
 
                     <x-nav-link :href="route('vacancies.create')" :active="request()->routeIs('vacancies.create')">
-                        {{ __('Create Vacancy') }}
+                        {{ __('New Vacancy') }}
                     </x-nav-link>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('vacancies.create')" :active="request()->routeIs('vacancies.create')">
-                {{ __('Create Vacancy') }}
+                {{ __('New Vacancy') }}
             </x-responsive-nav-link>
         </div>
 

@@ -74,5 +74,17 @@
     "Developer": "Desarrollador",
     "Recluiter": "Reclutador",
     "Gets a job": "Obtiene un empleo",
-    "Post jobs": "Publica empleos"
+    "Post jobs": "Publica empleos",
+    "Title": "Título",
+    "Salary": "Salario",
+    "Category": "Categoría",
+    "Company": "Empresa",
+    "Last Day to apply": "Último día para postular",
+    "Description": "Descripción",
+    "Cover Image": "Imagen de portada",
+    "Create Post": "Crear publicación",
+    "Post Vacancy": "Publicar publicación",
+    "New Vacancy": "Nueva publicación",
+    "Select your salary": "Selecciona el salario",
+    "Select your category": "Selecciona la categoría"
 }
