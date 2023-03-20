@@ -12,6 +12,9 @@
         <x-input-label for="salary" :value="__('Salary')" />
         <x-select id="salary" name="salary" class="block mt-1 w-full text-center"
             placeholder="{{ __('Select your salary') }}">
+            @foreach ($salaries as $salary)
+                <option value="{{ $salary->id }}">{{ $salary->salary }}</option>
+            @endforeach
         </x-select>
         <x-input-error :messages="$errors->get('salary')" class="mt-2" />
     </div>
@@ -43,10 +46,12 @@
 
     <!-- Description -->
     <div class="mt-4">
-        <x-input-label for="last_day" :value="__('Description')" />
-        <textarea name="description" id=""
+        <x-input-label for="description" :value="__('Description')" />
+        <textarea name="description" id="description"
             class="border-gray-300 focus:border-purple-600 focus:ring-purple-600 rounded-md shadow-sm block mt-1 w-full h-60"></textarea>
-        <x-input-error :messages="$errors->get('last_day')" class="mt-2" />
+
+        {{-- <x-inputs.textarea wire:model.defer="currentProject.description" id="projectDescription" required /> --}}
+        <x-input-error :messages="$errors->get('description')" class="mt-2" />
     </div>
 
     <!-- Cover Image -->
