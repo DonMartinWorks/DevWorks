@@ -15,10 +15,10 @@ class CreateVacancy extends Component
 
     protected $rules = [
         'title' => 'required|string|max:60',
-        'salary' => 'required|numeric|between:1,9',
-        'category' => 'required|numeric|between:1,7',
+        'salary' => 'required',
+        'category' => 'required',
         'company' => 'required|string|max:60',
-        'last_day' => 'required|date',
+        'last_day' => 'required',
         'description' => 'required|string|max:450',
         'image' => 'required|image|max:1024'
     ];
