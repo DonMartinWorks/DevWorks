@@ -12,7 +12,7 @@
                     <h2 class="text-4xl font-bold text-center my-10">{{ __('Post Vacancy') }}</h2>
 
                     <div class="md:flex md:justify-center p-5">
-                        <livewire:component.create-vacancy />
+                        <livewire:forms.create-vacancy />
                     </div>
                 </div>
             </div>

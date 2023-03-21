@@ -213,7 +213,7 @@ return [
         'username'                 => 'usuario',
         'year'                     => 'año',
         'role'                     => 'tipo de usuario',
-        'title_vacancy'            => 'titulo de la vacante',
+        'title'            => 'titulo de la vacante',
         'salary'                   => 'salario',
         'category'                 => 'categoría',
         'company'                  => 'empresa',
