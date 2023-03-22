@@ -15,19 +15,37 @@ class UsersSeeder extends Seeder
     {
         //  Usuarios creados
         User::Create([
-            'name' => 'Din Djarin',
-            'email' => 'djarin@mandalorian.com',
+            'name' => 'Alberto Espinoza Hernández',
+            'email' => 'deve@deve.com',
             'password' => bcrypt('123456789'),
-            'phone' => '843701051',
+            'phone' => '987654321',
             'email_verified_at' => now(),
             'role' => 1
         ]);
 
         User::Create([
-            'name' => 'Bobba Fett',
-            'email' => 'bobba@fett.com',
+            'name' => 'Robert Jackson',
+            'email' => 'reclu@reclu.com',
             'password' => bcrypt('123456789'),
-            'phone' => '127110721',
+            'phone' => '123456789',
+            'email_verified_at' => now(),
+            'role' => 2
+        ]);
+
+        User::Create([
+            'name' => 'Guizzepe Ferri',
+            'email' => 'deve2@deve2.com',
+            'password' => bcrypt('123456789'),
+            'phone' => '123789654',
+            'email_verified_at' => now(),
+            'role' => 1
+        ]);
+
+        User::Create([
+            'name' => 'Nicoletta Gaines',
+            'email' => 'reclu2@reclu2.com',
+            'password' => bcrypt('123456789'),
+            'phone' => '987456023',
             'email_verified_at' => now(),
             'role' => 2
         ]);
