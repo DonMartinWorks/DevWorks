@@ -19,7 +19,7 @@ class CreateVacancy extends Component
         'category' => 'required',
         'company' => 'required|string|max:60',
         'last_day' => 'required',
-        'description' => 'required|string|max:450',
+        'description' => 'required|max:450',
         'image' => 'required|image|max:1024'
     ];
 
@@ -27,6 +27,17 @@ class CreateVacancy extends Component
     public function createVacancy()
     {
         $data = $this->validate();
+
+        # Almacenar la imagen de portada
+        $image = $this->image->store('public/vacancies');
+        // Nombre de la imagen de portada
+        $image_name = str_replace('public/vacancies', '', $image);
+
+        dd($image_name);
+
+        # Crear la vacante
+
+        # Redireccionar al usuario
     }
 
     public function render()
