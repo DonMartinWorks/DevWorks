@@ -9,12 +9,15 @@ _Este proyecto es un sistema de postulacion de empleos de programación._
 
 # Bitácora del proyecto
 
-_Esta sección muetrsa los avances por dia del proyecto._
+_Esta sección muestra los avances por dia del proyecto._
 
-| Fecha      | Nombre                  | Descripción                                                           |
-| :--------- | :---------------------- | :-------------------------------------------------------------------- |
-| `16/03/23` | `Creacion del proyecto` | Creación del proyecto y se agrega phone para user.                    |
-| `17/03/23` | `Rol y cuenta validada` | Creación de un rol para user y validacion para cada cuenta por email. |
+| Fecha      | Nombre                        | Descripción                                                             |
+| :--------- | :---------------------------- | :---------------------------------------------------------------------- |
+| `16/03/23` | `Creacion del proyecto`       | Creación del proyecto y se agrega phone para user.                      |
+| `17/03/23` | `Rol y cuenta validada`       | Creación de un rol para user y validacion para cada cuenta por email.   |
+| `20/03/23` | `Vista vacantes`              | Vistas de vacantes - Livewire - Listado salarios y componente TEXTAREA. |
+| `21/03/23` | `Validacion del formulario`   | Validando el formulario - reglas a las vacantes.                        |
+| `22/03/23` | `Funcionalidad nueva vacante` | Almacenando una nueva vacante - Storage de portada.                     |
 
 <br />
 <br />
