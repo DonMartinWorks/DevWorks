@@ -18,7 +18,7 @@ _Esta sección muestra los avances por dia del proyecto._
 | `20/03/23` | `Vista vacantes`              | Vistas de vacantes - Livewire - Listado salarios y componente TEXTAREA. |
 | `21/03/23` | `Validacion del formulario`   | Validando el formulario - reglas a las vacantes.                        |
 | `22/03/23` | `Funcionalidad nueva vacante` | Almacenando una nueva vacante - Storage de portada.                     |
-| `23/03/23` | `Listado de las vacantes    ` | Sistema de listado y paginación de las vacantes.                        |
+| `23/03/23` | `Listado de las vacantes`     | Sistema de listado y paginación de las vacantes.                        |
 
 <br />
 <br />
