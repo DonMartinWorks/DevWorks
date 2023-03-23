@@ -9,6 +9,9 @@ class Vacancy extends Model
 {
     use HasFactory;
 
+    //protected $dates = ['last_day'];
+    protected $casts = [ 'last_day'=>'date'];
+
     protected $fillable = [
         'title',
         'salary_id',
