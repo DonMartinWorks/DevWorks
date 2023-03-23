@@ -80,6 +80,7 @@
     "Category": "Categoría",
     "Company": "Empresa",
     "Last Day to apply": "Último día para postular",
+    "Last Day": "Último día",
     "Description": "Descripción",
     "Cover Image": "Imagen de portada",
     "Create Post": "Crear publicación",
@@ -88,5 +89,8 @@
     "Select your salary": "Selecciona el salario",
     "Select your category": "Selecciona la categoría",
     "Your Vacancies": "Tus vacantes",
-    "The vacancy was published successfully!": "¡La vacante se publicó satisfactoriamente!"
+    "The vacancy was published successfully!": "¡La vacante se publicó satisfactoriamente!",
+    "Candidates": "Candidatos",
+    "Edit": "Editar",
+    "Delete": "Eliminar"
 }
