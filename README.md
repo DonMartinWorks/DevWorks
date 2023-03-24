@@ -11,14 +11,15 @@ _Este proyecto es un sistema de postulacion de empleos de programación._
 
 _Esta sección muestra los avances por dia del proyecto._
 
-| Fecha      | Nombre                        | Descripción                                                             |
-| :--------- | :---------------------------- | :---------------------------------------------------------------------- |
-| `16/03/23` | `Creacion del proyecto`       | Creación del proyecto y se agrega phone para user.                      |
-| `17/03/23` | `Rol y cuenta validada`       | Creación de un rol para user y validacion para cada cuenta por email.   |
-| `20/03/23` | `Vista vacantes`              | Vistas de vacantes - Livewire - Listado salarios y componente TEXTAREA. |
-| `21/03/23` | `Validacion del formulario`   | Validando el formulario - reglas a las vacantes.                        |
-| `22/03/23` | `Funcionalidad nueva vacante` | Almacenando una nueva vacante - Storage de portada.                     |
-| `23/03/23` | `Listado de las vacantes`     | Sistema de listado y paginación de las vacantes.                        |
+| Fecha      | Nombre                        | Descripción                                                                         |
+| :--------- | :---------------------------- | :---------------------------------------------------------------------------------- |
+| `16/03/23` | `Creacion del proyecto`       | Creación del proyecto y se agrega phone para user.                                  |
+| `17/03/23` | `Rol y cuenta validada`       | Creación de un rol para user y validacion para cada cuenta por email.               |
+| `20/03/23` | `Vista vacantes`              | Vistas de vacantes - Livewire - Listado salarios y componente TEXTAREA.             |
+| `21/03/23` | `Validacion del formulario`   | Validando el formulario - reglas a las vacantes.                                    |
+| `22/03/23` | `Funcionalidad nueva vacante` | Almacenando una nueva vacante - Storage de portada.                                 |
+| `23/03/23` | `Listado de las vacantes`     | Sistema de listado y paginación de las vacantes.                                    |
+| `24/03/23` | `Editar una vacante`          | Sistema de muestra de vacantes y cambio de las rutas para los componentes livewire. |
 
 <br />
 <br />

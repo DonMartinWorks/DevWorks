@@ -13,7 +13,7 @@
                 </div>
             @endif
 
-            <livewire:forms.show-vacancies />
+            <livewire:forms.vacancy.show-vacancies />
         </div>
     </div>
 </x-app-layout>

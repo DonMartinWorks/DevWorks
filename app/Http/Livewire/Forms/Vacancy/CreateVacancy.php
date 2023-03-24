@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire\Forms;
+namespace App\Http\Livewire\Forms\Vacancy;
 
 use App\Models\Category;
 use App\Models\Salary;
@@ -59,7 +59,7 @@ class CreateVacancy extends Component
         $salaries = Salary::all();
         $categories = Category::all();
 
-        return view('livewire.forms.create-vacancy', [
+        return view('livewire.forms.vacancy.create-vacancy', [
             'salaries' => $salaries,
             'categories' => $categories
         ]);

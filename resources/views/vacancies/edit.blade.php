@@ -18,7 +18,7 @@
                     <h2 class="text-4xl font-bold text-center my-10">{{ __('Edit Vacancy') }}: {{ $vacancy->title }}</h2>
 
                     <div class="md:flex md:justify-center p-5">
-                        <livewire:forms.edit-vacancy :vacancy="$vacancy" />
+                        <livewire:forms.vacancy.edit-vacancy :vacancy="$vacancy" />
                     </div>
                 </div>
             </div>
