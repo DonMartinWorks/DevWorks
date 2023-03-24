@@ -1,5 +1,6 @@
 <div>
-    <div class="bg-gray-100 overflow-hidden shadow-sm sm:rounded-lg border-purple-500 border-l-4 border-r-4 border-t-4 border-b-4">
+    <div
+        class="bg-gray-100 overflow-hidden shadow-sm sm:rounded-lg border-purple-500 border-l-4 border-r-4 border-t-4 border-b-4">
         @forelse ($vacancies as $vacancy)
             <div
                 class="p-6 bg-white border-b border-purple-400 hover:bg-purple-100
@@ -22,7 +23,7 @@
                         <span class="text-orange-300 mr-3">0</span> {{ __('Candidates') }}
                     </a>
 
-                    <a href="#"
+                    <a href="{{ route('vacancies.edit', $vacancy->id) }}"
                         class="bg-slate-900 hover:bg-yellow-500 focus:bg-yellow-500 py-2 px-4 rounded-lg text-white text-xs font-bold uppercase text-center"
                         title="{{ __('Edit') }} {{ $vacancy->title }}">
                         {{ __('Edit') }}

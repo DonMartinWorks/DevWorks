@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Models;
 
 use App\Http\Controllers\Controller;
+use App\Models\Vacancy;
 use Illuminate\Http\Request;
 
 class VacancyController extends Controller
@@ -42,9 +43,9 @@ class VacancyController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Vacancy $vacancy)
     {
-        //
+        return view('vacancies.edit', ['vacancy' => $vacancy]);
     }
 
     /**

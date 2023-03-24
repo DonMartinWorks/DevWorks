@@ -20,7 +20,8 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', [VacancyController::class, 'index'])->middleware(['auth', 'verified'])->name('vacancies.index');
-Route::get('/dashboard/create', [VacancyController::class, 'create'])->middleware(['auth', 'verified'])->name('vacancies.create');
+Route::get('/vacancies/create', [VacancyController::class, 'create'])->middleware(['auth', 'verified'])->name('vacancies.create');
+Route::get('/vacancies/{vacancy}/edit', [VacancyController::class, 'edit'])->middleware(['auth', 'verified'])->name('vacancies.edit');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
