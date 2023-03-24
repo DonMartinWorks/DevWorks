@@ -82,7 +82,7 @@
             @if ($image)
                 <b class="mb-4">{{ __('Cover Image') }}</b>
 
-                <img class="flex w-full rounded-2xl" src="{{$image->temporaryUrl()}}" alt="{{ __('Cover Image') }}">
+                <img class="flex w-full rounded-2xl border-purple-500 border-l-4 border-r-4 border-t-4 border-b-4" src="{{$image->temporaryUrl()}}" alt="{{ __('Cover Image') }}">
             @else
             @endif
         </div>

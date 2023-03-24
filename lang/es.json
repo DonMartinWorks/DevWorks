@@ -84,8 +84,10 @@
     "Description": "Descripción",
     "Cover Image": "Imagen de portada",
     "Create Post": "Crear publicación",
+    "Edit Post": "Editar publicación",
     "Post Vacancy": "Publicar publicación",
     "New Vacancy": "Nueva publicación",
+    "Edit Vacancy": "Editar vacante",
     "Select your salary": "Selecciona el salario",
     "Select your category": "Selecciona la categoría",
     "Your Vacancies": "Tus vacantes",
@@ -93,5 +95,8 @@
     "Candidates": "Candidatos",
     "Edit": "Editar",
     "Delete": "Eliminar",
-    "There is no vacancies to show!": "¡No se encontró vacantes para mostrar!"
+    "There is no vacancies to show!": "¡No se encontró vacantes para mostrar!",
+    "Vacancy Image": "Imagen vacante",
+    "Actual Cover": "Portada actual",
+    "Return to the list of vacancies": "Regresar a la lista de vacantes"
 }

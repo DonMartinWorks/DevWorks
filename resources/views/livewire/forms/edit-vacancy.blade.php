@@ -78,14 +78,11 @@
         <x-text-input id="image" class="block mt-1 w-full" type="file" name="image" wire:model="image"
             :value="old('image')" required accept="image/*" />
 
-        {{-- <div class="my-5">
-            @if ($image)
-                <b class="mb-4">{{ __('Cover Image') }}</b>
+        <div class="my-5">
+            <x-input-label :value="__('Actual Cover')" />
 
-                <img class="flex w-full rounded-2xl" src="{{ $image->temporaryUrl() }}" alt="{{ __('Cover Image') }}">
-            @else
-            @endif
-        </div> --}}
+            <img class="flex w-full rounded-2xl border-purple-500 border-l-4 border-r-4 border-t-4 border-b-4" src="{{ asset('storage/vacancies/' . $image) }}" alt="{{ __('Vacancy Image') . " " . $title }}">
+        </div>
 
         @error('image')
             <livewire:component.show-alert :message="$message" />
