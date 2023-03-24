@@ -1,6 +1,5 @@
 <div>
-
-    <div class="bg-gray-100 overflow-hidden shadow-sm sm:rounded-lg">
+    <div class="bg-gray-100 overflow-hidden shadow-sm sm:rounded-lg border-purple-500 border-l-4 border-r-4 border-t-4 border-b-4">
         @forelse ($vacancies as $vacancy)
             <div
                 class="p-6 bg-white border-b border-purple-400 hover:bg-purple-100
@@ -44,5 +43,4 @@
     <div class="my-10 ml-5 mr-5">
         {{ $vacancies->links() }}
     </div>
-
 </div>
