@@ -20,6 +20,7 @@ _Esta sección muestra los avances por dia del proyecto._
 | `22/03/23` | `Funcionalidad nueva vacante` | Almacenando una nueva vacante - Storage de portada.                                 |
 | `23/03/23` | `Listado de las vacantes`     | Sistema de listado y paginación de las vacantes.                                    |
 | `24/03/23` | `Editar una vacante`          | Sistema de muestra de vacantes y cambio de las rutas para los componentes livewire. |
+| `25/03/23` | `Editar una vacante`          | Sistema de actualizacion de las vacantes.                                           |
 
 <br />
 <br />

@@ -1,4 +1,4 @@
-<form class="md:w-1/2 space-y-5" wire:submit.prevent="createVacancy">
+<form class="md:w-1/2 space-y-5" wire:submit.prevent="editVacancy">
     <!-- Title -->
     <div class="mt-4">
         <x-input-label for="title" :value="__('Title')" />
@@ -76,7 +76,7 @@
     <div class="mt-4">
         <x-input-label for="image" :value="__('Cover Image')" />
         <x-text-input id="image" class="block mt-1 w-full" type="file" name="image" wire:model="image"
-            :value="old('image')" required accept="image/*" />
+            :value="old('image')" accept="image/*" />
 
         <div class="my-5">
             <x-input-label :value="__('Actual Cover')" />
