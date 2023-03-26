@@ -6,8 +6,9 @@ use App\Models\Salary;
 use App\Models\Vacancy;
 use Livewire\Component;
 use App\Models\Category;
-use Illuminate\Support\Carbon;
 use Livewire\WithFileUploads;
+use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Storage;
 
 class EditVacancy extends Component
 {
@@ -43,15 +44,16 @@ class EditVacancy extends Component
     {
         $data = $this->validate();
 
+        # Busca la vacante para editar
+        $vacancy = Vacancy::find($this->vacancy_id);
+
         # Si hay una nueva imagen de portada
         if ($this->new_image) {
             # Reemplazar la imagen de portada
             $image = $this->new_image->store('public/vacancies');
             $data['image'] = str_replace('public/vacancies/', '', $image);
+            Storage::delete('public/vacancies/' . $vacancy->image);
         }
-
-        # Encontrar la vacante a editar
-        $vacancy = Vacancy::find($this->vacancy_id);
 
         # Asignar los valores
         $vacancy->title = $data['title'];
