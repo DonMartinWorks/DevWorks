@@ -75,19 +75,29 @@
     <!-- Cover Image -->
     <div class="mt-4">
         <x-input-label for="image" :value="__('Cover Image')" />
-        <x-text-input id="image" class="block mt-1 w-full" type="file" name="image" wire:model="image"
-            :value="old('image')" accept="image/*" />
+        <x-text-input id="image" class="block mt-1 w-full" type="file" wire:model="new_image" :value="old('image')"
+            accept="image/*" />
 
         <div class="my-5">
             <x-input-label :value="__('Actual Cover')" />
 
-            <img class="flex w-full rounded-2xl border-purple-500 border-l-4 border-r-4 border-t-4 border-b-4" src="{{ asset('storage/vacancies/' . $image) }}" alt="{{ __('Vacancy Image') . " " . $title }}">
+            <img class="flex w-full rounded-2xl border-purple-500 border-l-4 border-r-4 border-t-4 border-b-4"
+                src="{{ asset('storage/vacancies/' . $image) }}" alt="{{ __('Vacancy Image') . ' ' . $title }}">
         </div>
 
-        @error('image')
+        @error('new_image')
             <livewire:component.show-alert :message="$message" />
         @enderror
     </div>
+
+    <div class="my-5">
+        @if ($new_image)
+            <b class="mb-4">{{ __('New Image') }}</b>
+            <img class="flex w-full rounded-2xl border-purple-500 border-l-4 border-r-4 border-t-4 border-b-4" src="{{ $new_image->temporaryUrl() }}" alt="{{ __('New Image') }}">
+        @else
+        @endif
+    </div>
+
 
     <x-primary-button class="mt-5 w-full justify-center py-4">
         {{ __('Edit Post') }}

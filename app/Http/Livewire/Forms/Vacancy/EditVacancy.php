@@ -7,10 +7,13 @@ use App\Models\Vacancy;
 use Livewire\Component;
 use App\Models\Category;
 use Illuminate\Support\Carbon;
+use Livewire\WithFileUploads;
 
 class EditVacancy extends Component
 {
-    public $vacancy_id, $title, $salary, $category, $company, $last_day, $description, $image;
+    public $vacancy_id, $title, $salary, $category, $company, $last_day, $description, $image, $new_image;
+
+    use WithFileUploads;
 
     protected $rules = [
         'title' => 'required|string|max:60',
@@ -18,7 +21,8 @@ class EditVacancy extends Component
         'category' => 'required',
         'company' => 'required|string|max:60',
         'last_day' => 'required',
-        'description' => 'required|max:450'
+        'description' => 'required|max:450',
+        'new_image' => 'nullable|image|max:1024'
     ];
 
     public function mount(Vacancy $vacancy)
@@ -40,6 +44,11 @@ class EditVacancy extends Component
         $data = $this->validate();
 
         # Si hay una nueva imagen de portada
+        if ($this->new_image) {
+            # Reemplazar la imagen de portada
+            $image = $this->new_image->store('public/vacancies');
+            $data['image'] = str_replace('public/vacancies/', '', $image);
+        }
 
         # Encontrar la vacante a editar
         $vacancy = Vacancy::find($this->vacancy_id);
@@ -51,6 +60,7 @@ class EditVacancy extends Component
         $vacancy->company = $data['company'];
         $vacancy->last_day = $data['last_day'];
         $vacancy->description = $data['description'];
+        $vacancy->image = $data['image'] ?? $vacancy->image;
 
         # Guardar la vacante
         $vacancy->save();
@@ -60,7 +70,6 @@ class EditVacancy extends Component
 
         # Redireccionar al usuario
         return redirect()->route('vacancies.index');
-
     }
 
     public function render()
