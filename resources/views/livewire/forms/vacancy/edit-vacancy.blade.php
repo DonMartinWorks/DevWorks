@@ -92,7 +92,7 @@
 
     <div class="my-5">
         @if ($new_image)
-            <b class="mb-4">{{ __('New Image') }}</b>
+            <x-input-label :value="__('New Image')" />
             <img class="flex w-full rounded-2xl border-purple-500 border-l-4 border-r-4 border-t-4 border-b-4" src="{{ $new_image->temporaryUrl() }}" alt="{{ __('New Image') }}">
         @else
         @endif
