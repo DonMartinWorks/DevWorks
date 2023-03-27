@@ -4,6 +4,7 @@ namespace App\Http\Livewire\Forms\Vacancy;
 
 use App\Models\Vacancy;
 use Livewire\Component;
+use Illuminate\Support\Facades\Storage;
 
 class ShowVacancies extends Component
 {
@@ -11,6 +12,8 @@ class ShowVacancies extends Component
 
     public function deleteVacancy(Vacancy $vacancy)
     {
+        Storage::delete('public/vacancies/' . $vacancy->image);
+
         $vacancy->delete();
     }
 
