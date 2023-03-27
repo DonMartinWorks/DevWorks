@@ -7,6 +7,13 @@ use Livewire\Component;
 
 class ShowVacancies extends Component
 {
+    protected $listeners = ['deleteVacancy'];
+
+    public function deleteVacancy(Vacancy $vacancy)
+    {
+        $vacancy->delete();
+    }
+
     public function render()
     {
         # Trae todas las vacantes que correspondan al usuario logeado.

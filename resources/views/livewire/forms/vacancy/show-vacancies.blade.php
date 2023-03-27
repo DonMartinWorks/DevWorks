@@ -29,11 +29,11 @@
                         {{ __('Edit') }}
                     </a>
 
-                    <a href="#"
+                    <button wire:click="$emit('alert', {{ $vacancy->id }})"
                         class="bg-slate-900 hover:bg-rose-600 focus:bg-rose-600 py-2 px-4 rounded-lg text-white text-xs font-bold uppercase text-center"
                         title="{{ __('Delete') }} {{ $vacancy->title }}">
                         {{ __('Delete') }}
-                    </a>
+                    </button>
                 </div>
             </div>
         @empty
@@ -45,3 +45,34 @@
         {{ $vacancies->links() }}
     </div>
 </div>
+
+@push('scripts')
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        // El siguiente código es el Alert de SWEETALERT2
+        Livewire.on('alert', vacancyId => {
+            Swal.fire({
+                title: '{{ __('Are you sure?') }}',
+                text: '{{ __('You will not be able to revert this!') }}',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#DA0000',
+                cancelButtonColor: '#818181',
+                confirmButtonText: '{{ __('Yes delete it!') }}',
+                cancelButtonText: '{{ __('Cancel') }}',
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    //Evento activado
+                    Livewire.emit('deleteVacancy', vacancyId)
+
+                    Swal.fire(
+                        '{{ __('Deleted!') }}',
+                        '{{ __('Your file has been deleted.') }}',
+                        'success'
+                    )
+                }
+            })
+        })
+    </script>
+@endpush

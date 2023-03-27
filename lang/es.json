@@ -100,5 +100,10 @@
     "Vacancy Image": "Imagen vacante",
     "Actual Cover": "Portada actual",
     "Return to the list of vacancies": "Regresar a la lista de vacantes",
-    "New Image": "Nueva imagen"
+    "New Image": "Nueva imagen",
+    "Are you sure?": "¿Estás seguro?",
+    "You will not be able to revert this!": "¡No podrás revertir esto!",
+    "Yes delete it!": "¡Si eliminar!",
+    "Deleted!": "¡Eliminado!",
+    "Your file has been deleted.": "Tu archivo a sido eliminado."
 }
