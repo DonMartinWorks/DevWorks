@@ -12,7 +12,19 @@ class ShowVacancies extends Component
 
     public function deleteVacancy(Vacancy $vacancy)
     {
-        Storage::delete('public/vacancies/' . $vacancy->image);
+        if ($vacancy->image) {
+            Storage::delete('public/vacancies/' . $vacancy->image);
+        }
+
+        /*
+        if ($vacancy->candidates->count()) {
+            foreach ($vacancy->candidates as $candidate) {
+                if ($candidate->cv) {
+                    Storage::delete('public/cv/' . $candidate->cv);
+                }
+            }
+        }
+        */
 
         $vacancy->delete();
     }
