@@ -6,7 +6,7 @@
                 class="p-6 bg-white border-b border-purple-400 hover:bg-purple-100
         md:flex md:justify-between md:items-center">
                 <div class="leading-10">
-                    <a href="#" class="text-xl font-bold hover:text-purple-600 focus:text-purple-600 uppercase">
+                    <a href="{{route('vacancies.show', $vacancy->id)}}" class="text-xl font-bold hover:text-purple-600 focus:text-purple-600 uppercase">
                         {{ $vacancy->title }}
                     </a>
                     <p class="text-sm text-gray-600 font-bold">{{ $vacancy->company }}</p>

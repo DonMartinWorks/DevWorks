@@ -168,6 +168,11 @@ _Comandos que podrian ser necesarios_
     php artisan make:model Model -mcs --resource
     ```
 
+4. Creacion de un componente livewire con ruta estatica.
+    ```
+    php artisan make:livewire Forms/Vacancy/EditVacancies
+    ```
+
 <br />
 <br />
 
