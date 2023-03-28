@@ -15,12 +15,24 @@
             </p>
 
             <p class="font-semibold text-sm uppercase text-gray-700 my-3">{{ __('Category') }}:
-                <span class="font-normal normal-case text-sm text-purple-700">{{ $vacancy->category_id }}</span>
+                <span class="font-normal normal-case text-sm text-purple-700">{{ $vacancy->category->category }}</span>
             </p>
 
             <p class="font-semibold text-sm uppercase text-gray-700 my-3">{{ __('Salary') }}:
-                <span class="font-normal normal-case text-sm text-purple-700">{{ $vacancy->salary_id }}</span>
+                <span class="font-normal normal-case text-sm text-purple-700">{{ $vacancy->salary->salary }}</span>
             </p>
+        </div>
+    </div>
+
+    <div class="md:grid md:grid-cols-6 gap-5">
+        <div class="md:col-span-2">
+            <img class="flex w-auto border-purple-500 border-l-4 border-r-4 border-t-4 border-b-4"
+                src="{{ asset('storage/vacancies/' . $vacancy->image) }}" alt="{{ __('Vacancy Image') . ' ' . $vacancy->title }}">
+        </div>
+
+        <div class="md:col-span-4">
+            <h3 class="text-2xl font-bold">{{ __('Vacancy Description') }}</h3>
+            <p class="my-5 font-semibold">{{ $vacancy->description }}</p>
         </div>
     </div>
 </div>
