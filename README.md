@@ -11,18 +11,19 @@ _Este proyecto es un sistema de postulacion de empleos de programación._
 
 _Esta sección muestra los avances por dia del proyecto._
 
-| Fecha      | Nombre                            | Descripción                                                                                              |
-| :--------- | :-------------------------------- | :------------------------------------------------------------------------------------------------------- |
-| `16/03/23` | `Creacion del proyecto`           | Creación del proyecto y se agrega phone para user.                                                       |
-| `17/03/23` | `Rol y cuenta validada`           | Creación de un rol para user y validacion para cada cuenta por email.                                    |
-| `20/03/23` | `Vista vacantes`                  | Vistas de vacantes - Livewire - Listado salarios y componente TEXTAREA.                                  |
-| `21/03/23` | `Validacion del formulario`       | Validando el formulario - reglas a las vacantes.                                                         |
-| `22/03/23` | `Funcionalidad nueva vacante`     | Almacenando una nueva vacante - Storage de portada.                                                      |
-| `23/03/23` | `Listado de las vacantes`         | Sistema de listado y paginación de las vacantes.                                                         |
-| `24/03/23` | `Editar una vacante`              | Sistema de muestra de vacantes y cambio de las rutas para los componentes livewire.                      |
-| `25/03/23` | `Editar una vacante`              | Sistema de actualizacion de las vacantes.                                                                |
-| `26/03/23` | `Actualizar imagen de portada`    | Actualización de las imagenes de portada, tambien elimina el archivo antiguo.                            |
-| `27/03/23` | `Policy de vacante y eliminacion` | Se crea un policy para evitar otros usuarios editen otra vacante que no sea suya y eliminado de vacante. |
+| Fecha      | Nombre                            | Descripción                                                                                                                |
+| :--------- | :-------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
+| `16/03/23` | `Creacion del proyecto`           | Creación del proyecto y se agrega phone para user.                                                                         |
+| `17/03/23` | `Rol y cuenta validada`           | Creación de un rol para user y validacion para cada cuenta por email.                                                      |
+| `20/03/23` | `Vista vacantes`                  | Vistas de vacantes - Livewire - Listado salarios y componente TEXTAREA.                                                    |
+| `21/03/23` | `Validacion del formulario`       | Validando el formulario - reglas a las vacantes.                                                                           |
+| `22/03/23` | `Funcionalidad nueva vacante`     | Almacenando una nueva vacante - Storage de portada.                                                                        |
+| `23/03/23` | `Listado de las vacantes`         | Sistema de listado y paginación de las vacantes.                                                                           |
+| `24/03/23` | `Editar una vacante`              | Sistema de muestra de vacantes y cambio de las rutas para los componentes livewire.                                        |
+| `25/03/23` | `Editar una vacante`              | Sistema de actualizacion de las vacantes.                                                                                  |
+| `26/03/23` | `Actualizar imagen de portada`    | Actualización de las imagenes de portada, tambien elimina el archivo antiguo.                                              |
+| `27/03/23` | `Policy de vacante y eliminacion` | Se crea un policy para evitar otros usuarios editen otra vacante que no sea suya y eliminado de vacante.                   |
+| `28/03/23` | `Vista de una nueva vacante`      | Se crea una nueva vista para mostrar las vacantes para usuarios registrados o invitados y cambio en la rutas de route web. |
 
 <br />
 <br />
@@ -164,11 +165,12 @@ _Comandos que podrian ser necesarios_
     ```
 
 4. Creacion de un modelo con controller tipo resource, con migration y seeder para la DB.
+
     ```
     php artisan make:model Model -mcs --resource
     ```
 
-4. Creacion de un componente livewire con ruta estatica.
+5. Creacion de un componente livewire con ruta estatica.
     ```
     php artisan make:livewire Forms/Vacancy/EditVacancies
     ```
