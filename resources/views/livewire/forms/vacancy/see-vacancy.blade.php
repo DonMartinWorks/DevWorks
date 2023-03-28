@@ -27,7 +27,8 @@
     <div class="md:grid md:grid-cols-6 gap-5">
         <div class="md:col-span-2">
             <img class="flex w-auto border-purple-500 border-l-4 border-r-4 border-t-4 border-b-4"
-                src="{{ asset('storage/vacancies/' . $vacancy->image) }}" alt="{{ __('Vacancy Image') . ' ' . $vacancy->title }}">
+                src="{{ asset('storage/vacancies/' . $vacancy->image) }}"
+                alt="{{ __('Vacancy Image') . ' ' . $vacancy->title }}">
         </div>
 
         <div class="md:col-span-4">
@@ -35,4 +36,15 @@
             <p class="my-5 font-semibold">{{ $vacancy->description }}</p>
         </div>
     </div>
+
+    @guest
+        <div
+            class="mt-5 bg-white border-dashed text-center border-purple-500 border-l-4 border-r-4 border-t-4 border-b-4 rounded-2xl">
+            <p class="my-5"><span class="font-bold">{{ __('Do you want to apply for this vacancy?') }}</span><a
+                    class="font-semibold text-sky-600 hover:text-sky-800 hover:underline" href="{{ route('login') }}">
+                    {{ __('With your account you can apply for this and other vacancies') }}
+                </a>
+            </p>
+        </div>
+    @endguest
 </div>
