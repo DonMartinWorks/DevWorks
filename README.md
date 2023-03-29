@@ -24,6 +24,7 @@ _Esta sección muestra los avances por dia del proyecto._
 | `26/03/23` | `Actualizar imagen de portada`    | Actualización de las imagenes de portada, tambien elimina el archivo antiguo.                                              |
 | `27/03/23` | `Policy de vacante y eliminacion` | Se crea un policy para evitar otros usuarios editen otra vacante que no sea suya y eliminado de vacante.                   |
 | `28/03/23` | `Vista de una nueva vacante`      | Se crea una nueva vista para mostrar las vacantes para usuarios registrados o invitados y cambio en la rutas de route web. |
+| `29/03/23` | `Cambios esteticos`               | Nuevos cambios esteticos y titulo para las vistas.                                                                         |
 
 <br />
 <br />
