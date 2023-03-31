@@ -3,7 +3,7 @@
         class="bg-gray-100 overflow-hidden shadow-sm sm:rounded-lg border-purple-500 border-l-4 border-r-4 border-t-4 border-b-4">
         @forelse ($vacancies as $vacancy)
             <div
-                class="p-6 bg-white border-b border-purple-400 hover:bg-purple-100
+                class="p-6 bg-white border-b border-purple-400 hover:bg-gray-100
         md:flex md:justify-between md:items-center">
                 <div class="leading-10">
                     <a href="{{route('vacancies.show', $vacancy->id)}}" class="text-xl font-bold hover:text-purple-600 focus:text-purple-600 uppercase">
