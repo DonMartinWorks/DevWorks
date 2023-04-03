@@ -13,11 +13,13 @@
                 class="bg-gray-100 overflow-hidden shadow-sm sm:rounded-lg border-purple-500 border-l-4 border-r-4 border-t-4 border-b-4">
                 <div class="p-6 text-gray-900">
                     @auth
-                        <div class="flex">
-                            <x-link :href="route('vacancies.index')" class="mz-20">
-                                {{ __('Return to the list of vacancies') }}
-                            </x-link>
-                        </div>
+                        @can('create', App\Models\Vacancy::class)
+                            <div class="flex">
+                                <x-link :href="route('vacancies.index')" class="mz-20">
+                                    {{ __('Return to the list of vacancies') }}
+                                </x-link>
+                            </div>
+                        @endcan
                     @endauth
 
                     <livewire:forms.vacancy.see-vacancy :vacancy="$vacancy" />
