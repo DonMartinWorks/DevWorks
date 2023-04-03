@@ -219,5 +219,6 @@ return [
         'company'                  => 'empresa',
         'last_day'                 => 'último dia para postular',
         'new_image'                => 'nueva imagen',
+        'cv'                       => 'currículum vitae',
     ],
 ];
