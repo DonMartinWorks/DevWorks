@@ -3,9 +3,12 @@
 namespace App\Http\Livewire\Forms\Vacancy;
 
 use Livewire\Component;
+use Livewire\WithFileUploads;
 
 class ApplyVacancy extends Component
 {
+    use WithFileUploads;
+
     public $cv;
 
     protected $rules = [
@@ -17,7 +20,12 @@ class ApplyVacancy extends Component
      */
     public function apply()
     {
-        $this->validate();
+        $data = $this->validate();
+
+        # Almacenar el cv
+        $cv = $this->cv->store('public/cv');
+        // Nombre del cv
+        $data['cv'] = str_replace('public/cv', '', $cv);
 
         //  Almacenar el CV en el disco duro
 
