@@ -49,4 +49,10 @@
             </p>
         </div>
     @endguest
+
+    @auth
+        @cannot('create', App\Models\Vacancy::class)
+            <livewire:forms.vacancy.apply-vacancy />
+        @endcannot
+    @endauth
 </div>
