@@ -13,7 +13,7 @@ _Esta sección muestra los avances por dia del proyecto._
 
 | Fecha      | Nombre                            | Descripción                                                                                                                |
 | :--------- | :-------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| `16/03/23` | `Creacion del proyecto`           | Creación del proyecto y se agrega phone para user.                                                                         |
+| `16/03/23` | `Creacion del proyecto`           | Creación del proyecto y se agrega phone para user.user.                                                                    |
 | `17/03/23` | `Rol y cuenta validada`           | Creación de un rol para user y validacion para cada cuenta por email.                                                      |
 | `20/03/23` | `Vista vacantes`                  | Vistas de vacantes - Livewire - Listado salarios y componente TEXTAREA.                                                    |
 | `21/03/23` | `Validacion del formulario`       | Validando el formulario - reglas a las vacantes.                                                                           |
@@ -27,6 +27,7 @@ _Esta sección muestra los avances por dia del proyecto._
 | `29/03/23` | `Cambios esteticos`               | Nuevos cambios esteticos y titulo para las vistas.                                                                         |
 | `31/03/23` | `Acceso por usuario`              | Se crea la funcionalidad de filtrado por rol de usuario negando el acceso de recluiter a los devs.                         |
 | `03/04/23` | `Componente postular vacante`     | Se crea el componente de crear una vacante, filtrado de datos por rol y guardado de CV.                                    |
+| `04/04/23` | `Guardados de los postulantes`    | Se crea la funcionalidad de vacante a la DB y se elimina los CV al eliminar a vacante.                                     |
 
 <br />
 <br />
