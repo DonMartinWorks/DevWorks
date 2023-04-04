@@ -52,7 +52,7 @@
 
     @auth
         @cannot('create', App\Models\Vacancy::class)
-            <livewire:forms.vacancy.apply-vacancy />
+            <livewire:forms.vacancy.apply-vacancy :vacancy="$vacancy" />
         @endcannot
     @endauth
 </div>

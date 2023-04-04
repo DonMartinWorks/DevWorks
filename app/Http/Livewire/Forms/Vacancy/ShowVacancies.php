@@ -16,7 +16,7 @@ class ShowVacancies extends Component
             Storage::delete('public/vacancies/' . $vacancy->image);
         }
 
-        /*
+        //  Para eliminar los archivos cv de la vacante
         if ($vacancy->candidates->count()) {
             foreach ($vacancy->candidates as $candidate) {
                 if ($candidate->cv) {
@@ -24,7 +24,6 @@ class ShowVacancies extends Component
                 }
             }
         }
-        */
 
         $vacancy->delete();
     }
