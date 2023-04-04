@@ -16,7 +16,7 @@
                         @can('create', App\Models\Vacancy::class)
                             <div class="flex">
                                 <x-link :href="route('vacancies.index')" class="mz-20">
-                                    {{ __('Return to the list of vacancies') }}
+                                    {{ __('Return to your list of vacancies') }}
                                 </x-link>
                             </div>
                         @endcan

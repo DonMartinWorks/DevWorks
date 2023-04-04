@@ -26,6 +26,7 @@ _Esta sección muestra los avances por dia del proyecto._
 | `28/03/23` | `Vista de una nueva vacante`      | Se crea una nueva vista para mostrar las vacantes para usuarios registrados o invitados y cambio en la rutas de route web. |
 | `29/03/23` | `Cambios esteticos`               | Nuevos cambios esteticos y titulo para las vistas.                                                                         |
 | `31/03/23` | `Acceso por usuario`              | Se crea la funcionalidad de filtrado por rol de usuario negando el acceso de recluiter a los devs.                         |
+| `03/04/23` | `Componente postular vacante`     | Se crea el componente de crear una vacante, filtrado de datos por rol y guardado de CV.                                    |
 
 <br />
 <br />
