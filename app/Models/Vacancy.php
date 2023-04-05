@@ -40,4 +40,10 @@ class Vacancy extends Model
     {
         return $this->hasMany(Candidate::class);
     }
+
+    // Es asociado con user
+    public function recluiter()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
 }
