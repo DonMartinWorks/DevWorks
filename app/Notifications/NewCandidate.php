@@ -13,12 +13,14 @@ class NewCandidate extends Notification
 
     /**
      * Create a new notification instance.
+     *
+     * @return void
      */
     public function __construct($id_vacancy, $vacancy_name, $user_id)
     {
-        $this->$id_vacancy = $id_vacancy;
-        $this->$vacancy_name = $vacancy_name;
-        $this->$user_id = $user_id;
+        $this->id_vacancy = $id_vacancy;
+        $this->vacancy_name = $vacancy_name;
+        $this->user_id = $user_id;
     }
 
     /**
@@ -26,7 +28,7 @@ class NewCandidate extends Notification
      *
      * @return array<int, string>
      */
-    public function via($notifiable): array
+    public function via($notifiable)
     {
         return ['mail', 'database'];
     }
@@ -36,7 +38,7 @@ class NewCandidate extends Notification
      */
     public function toMail($notifiable): MailMessage
     {
-        $url = url('/candidates/' . $this->user_id);
+        $url = url('/notifications/');
 
         return (new MailMessage)
             ->line(__('You have received a new candidate in your vacancy.'))
