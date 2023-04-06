@@ -28,6 +28,8 @@ _Esta sección muestra los avances por dia del proyecto._
 | `31/03/23` | `Acceso por usuario`              | Se crea la funcionalidad de filtrado por rol de usuario negando el acceso de recluiter a los devs.                         |
 | `03/04/23` | `Componente postular vacante`     | Se crea el componente de crear una vacante, filtrado de datos por rol y guardado de CV.                                    |
 | `04/04/23` | `Guardados de los postulantes`    | Se crea la funcionalidad de vacante a la DB y se elimina los CV al eliminar a vacante.                                     |
+| `05/04/23` | `Componente de notificaciones`    | Se crea el componente de notificacion y se da inicio a este.                                                               |
+| `06/04/23` | `Vista de notificaciones`         | Se crea la vista para el componente de notificacion.                                                                       |
 
 <br />
 <br />
