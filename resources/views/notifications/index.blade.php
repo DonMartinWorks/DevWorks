@@ -28,7 +28,7 @@
                             </div>
 
                             <div class="mt-5 lg:mt-0">
-                                <a href="#" class="p-3 bg-purple-600 hover:bg-purple-300 hover:text-gray-700 text-white text-md uppercase font-bold rounded-lg">{{__('See candidates')}}</a>
+                                <a href="#" class="p-3 bg-purple-600 hover:bg-purple-300 hover:text-gray-700 text-white text-md uppercase font-bold rounded-lg">{{__('See candidate')}}</a>
                             </div>
                         </div>
                     @empty

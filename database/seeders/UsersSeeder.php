@@ -24,7 +24,7 @@ class UsersSeeder extends Seeder
         ]);
 
         User::Create([
-            'name' => 'Robert Jackson',
+            'name' => 'SYB Talentos',
             'email' => 'reclu@reclu.com',
             'password' => bcrypt('123456789'),
             'phone' => '123456789',
@@ -35,8 +35,8 @@ class UsersSeeder extends Seeder
         User::Create([
             'name' => 'Guizzepe Ferri',
             'email' => 'deve2@deve2.com',
-            'password' => bcrypt('123456789'),
-            'phone' => '123789654',
+            'password' => bcrypt('987654321'),
+            'phone' => '654213789',
             'email_verified_at' => now(),
             'role' => 1
         ]);
@@ -44,8 +44,8 @@ class UsersSeeder extends Seeder
         User::Create([
             'name' => 'Nicoletta Gaines',
             'email' => 'reclu2@reclu2.com',
-            'password' => bcrypt('123456789'),
-            'phone' => '987456023',
+            'password' => bcrypt('987654321'),
+            'phone' => '226868645',
             'email_verified_at' => now(),
             'role' => 2
         ]);
