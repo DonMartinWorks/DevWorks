@@ -41,6 +41,7 @@ class NewCandidate extends Notification
         $url = url('/notifications/');
 
         return (new MailMessage)
+            ->subject(__('New Candidate'))
             ->line(__('You have received a new candidate in your vacancy.'))
             ->line(__('The vacancy is:') . ' ' . $this->vacancy_name)
             ->action(__('See notification'), $url)
