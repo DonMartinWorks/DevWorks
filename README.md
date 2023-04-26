@@ -30,6 +30,7 @@ _Esta sección muestra los avances por dia del proyecto._
 | `04/04/23` | `Guardados de los postulantes`    | Se crea la funcionalidad de vacante a la DB y se elimina los CV al eliminar a vacante.                                     |
 | `05/04/23` | `Componente de notificaciones`    | Se crea el componente de notificacion y se da inicio a este.                                                               |
 | `06/04/23` | `Vista de notificaciones`         | Se crea la vista para el componente de notificacion.                                                                       |
+| `26/04/23` | `Middleware UserRole`             | Se crea el middleware UserRole para filtrar segun el contenido a los usuarios que no sean recluiters.                      |
 
 <br />
 <br />

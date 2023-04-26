@@ -27,11 +27,11 @@
             <!-- Settings Dropdown -->
             @auth
                 <div class="hidden sm:flex sm:items-center sm:ml-6">
-                    @if (auth()->user()->role === 2)
+                    @can('create', App\Models\Vacancy::class)
                         <a class="mr-2 w-7 h-7 bg-purple-500 hover:bg-purple-700 rounded-full flex flex-col justify-center items-center text-sm font-extrabold text-white"
                             href="{{ route('notifications') }}"
                             title="{{ __('See notification') }}">{{ Auth::user()->unreadNotifications->count() }}</a>
-                    @endif
+                    @endcan
 
                     <x-dropdown align="right" width="48">
                         <x-slot name="trigger">
@@ -116,7 +116,7 @@
                         <a class="w-7 h-7 bg-purple-500 hover:bg-purple-700 rounded-full flex flex-col justify-center items-center text-sm font-extrabold text-white"
                             href="{{ route('notifications') }}"
                             title="{{ __('See notification') }}">{{ Auth::user()->unreadNotifications->count() }}</a>
-                        <p class="text-base font-medium text-gray-600">{{__('Notifications')}}</p>
+                        <p class="text-base font-medium text-gray-600">{{ __('Notifications') }}</p>
                     </div>
                 @endif
             </div>
