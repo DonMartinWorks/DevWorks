@@ -123,5 +123,8 @@
     "Request received ago": "Solicitud recibida",
     "See candidate": "Ver candidato",
     "You do not have any new notifications": "Usted no tiene notificaciones nuevas",
-    "New Candidate": "Nuevo candidato"
+    "New Candidate": "Nuevo candidato",
+    "List of Applicants for this Vacancy": "Lista de postulantes para esta vacante",
+    "The day this applicant applied": "El tiempo que este postulante postuló",
+    "See CV": "Ver CV"
 }

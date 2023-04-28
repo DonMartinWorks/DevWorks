@@ -15,7 +15,8 @@
                     <h2 class="text-4xl font-bold text-center my-10">{{ __('My Notifications') }}</h2>
 
                     @forelse ($notifications as $notification)
-                        <div class="p-5 my-2 border border-gray-500 bg-white hover:bg-gray-300 md:flex md:justify-between md:items-center rounded-2xl">
+                        <div
+                            class="p-5 my-2 border border-gray-500 bg-white hover:bg-gray-300 md:flex md:justify-between md:items-center rounded-2xl">
                             <div>
                                 <p class="font-semibold">{{ __('You have a new candidate in the vacancy') }}: <span
                                         class="font-bold text-purple-600 text-lg">{{ $notification->data['vacancy_name'] }}</span>
@@ -28,7 +29,8 @@
                             </div>
 
                             <div class="mt-5 lg:mt-0">
-                                <a href="#" class="p-3 bg-purple-600 hover:bg-purple-300 hover:text-gray-700 text-white text-md uppercase font-bold rounded-lg">{{__('See candidate')}}</a>
+                                <a href="{{ route('candidates.index', $notification->data['id_vacancy']) }}"
+                                    class="p-3 bg-purple-600 hover:bg-purple-300 hover:text-gray-700 text-white text-md uppercase font-bold rounded-lg">{{ __('See candidate') }}</a>
                             </div>
                         </div>
                     @empty
