@@ -14,6 +14,10 @@
                                 {{ $vacancy->title }}
                             </a>
                             <p class="my-2 text-base font-bold text-purple-600">{{ $vacancy->company }}</p>
+                            <p class="my-2 text-xs font-bold text-stone-400">{{ __('Category') }}:
+                                {{ $vacancy->category->category }}</p>
+                            <p class="my-2 text-xs font-bold text-stone-400">{{ __('Salary') }}:
+                                {{ $vacancy->salary->salary }}</p>
                             <p>{{ __('Last Day to apply') }}: <span
                                     class="font-extrabold">{{ $vacancy->last_day->format('d/m/Y') }}</span></p>
                         </div>

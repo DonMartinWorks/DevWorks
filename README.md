@@ -32,6 +32,7 @@ _Esta sección muestra los avances por dia del proyecto._
 | `06/04/23` | `Vista de notificaciones`         | Se crea la vista para el componente de notificacion.                                                                       |
 | `26/04/23` | `Middleware UserRole`             | Se crea el middleware UserRole para filtrar segun el contenido a los usuarios que no sean recluiters.                      |
 | `28/04/23` | `Listado de postulantes`             | Se crea la funcionalidad para mostrar a los postulantes, como ver su CV.                      |
+| `07/06/23` | `Pagina Principal y buscador de vacantes`             | Se crea la pagína principal y el servicio de busqueda de vacantes.                      |
 
 <br />
 <br />
