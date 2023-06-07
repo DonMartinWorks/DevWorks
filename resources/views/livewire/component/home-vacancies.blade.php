@@ -1,4 +1,6 @@
 <div>
+    <livewire:component.vacancies-filter />
+
     <div class="py-12">
         <div class="max-w-7xl mx-auto">
             <h3 class="font-extrabold text-4xl text-gray-700 mb-6 mt-12">{{ __('Our available vacancies') }}</h3>
