@@ -12,15 +12,17 @@
 
                 <!-- Navigation Links -->
                 @auth
-                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex font-semibold">
-                        <x-nav-link :href="route('vacancies.index')" :active="request()->routeIs('vacancies.index')">
-                            {{ __('Dashboard') }}
-                        </x-nav-link>
+                    @can('create', App\Models\Vacancy::class)
+                        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex font-semibold">
+                            <x-nav-link :href="route('vacancies.index')" :active="request()->routeIs('vacancies.index')">
+                                {{ __('Dashboard') }}
+                            </x-nav-link>
 
-                        <x-nav-link :href="route('vacancies.create')" :active="request()->routeIs('vacancies.create')">
-                            {{ __('New Vacancy') }}
-                        </x-nav-link>
-                    </div>
+                            <x-nav-link :href="route('vacancies.create')" :active="request()->routeIs('vacancies.create')">
+                                {{ __('New Vacancy') }}
+                            </x-nav-link>
+                        </div>
+                    @endcan
                 @endauth
             </div>
 
