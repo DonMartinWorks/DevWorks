@@ -14,7 +14,7 @@ class VacanciesFilter extends Component
 
     public function readData()
     {
-        dd('asdf');
+        $this->emit('searchTerm', $this->term, $this->category, $this->salary);
     }
 
     public function render()
